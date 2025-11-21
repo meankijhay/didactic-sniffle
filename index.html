@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Browser Extensions Manager UI</title>
+  
+  <link rel="stylesheet" href="style.css"> 
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body class="theme-dark">
+  <div class="app-container">
+    
+    <header class="app-header">
+      <div class="logo-area">
+        <img src="./assets/images/logo-extensions.svg" alt="Extensions Logo" class="header-logo">
+        <h1>Extensions</h1>
+      </div>
+      <button class="theme-toggle" aria-label="Toggle light and dark themes">
+        <svg fill="currentColor" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M12 2.25a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-1.5 0V3a.75.75 0 0 1 .75-.75ZM7.525 3.992a.75.75 0 0 1 .013 1.059l-1.597 1.596a.75.75 0 0 1-1.058-.013L4.922 5.039a.75.75 0 0 1 1.058-1.058l1.545 1.545ZM18.008 7.525a.75.75 0 0 1-1.059-.013l-1.596-1.597a.75.75 0 0 1 .013-1.058l1.545-1.545a.75.75 0 0 1 1.058 1.058l-1.545 1.545ZM2.25 12a.75.75 0 0 1 .75-.75H5.25a.75.75 0 0 1 0 1.5H3a.75.75 0 0 1-.75-.75ZM18.75 12a.75.75 0 0 1 .75-.75h2.25a.75.75 0 0 1 0 1.5H19.5a.75.75 0 0 1-.75-.75ZM12 7.75a4.25 4.25 0 1 0 0 8.5 4.25 4.25 0 0 0 0-8.5Z"/></svg>
+      </button>
+    </header>
+
+    <div class="manager-panel"> 
+      <main class="extensions-manager">
+        
+        <div class="extensions-header">
+          <h2>Extensions List</h2>
+          <div class="filter-controls">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="active">Active</button>
+            <button class="filter-btn" data-filter="inactive">Inactive</button>
+          </div>
+        </div>
+
+        <div class="extensions-grid">
+        </div>
+      </main>
+    </div>
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+      Coded by <a href="#">Mai</a>.
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
